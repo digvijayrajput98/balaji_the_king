@@ -1,9 +1,9 @@
 
 from flask import Flask,render_template,jsonify
 app = Flask(__name__)
-RESULT = [{'match':'namibia vs usa',
-        'Balaji Team':'usa',
-        'Script':'lay namibia at every odds, if namibia lambi 280 bet not with 20% limit'}]
+RESULT = [{'match':' ',
+        'Balaji Team':" ",
+        'Script':' '}]
 @app.route('/')
 
 def hello_world():
