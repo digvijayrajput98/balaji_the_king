@@ -16,6 +16,7 @@
    
   </head>
   <body>  
+    {% include 'nav.html' %}
     <div class="container" >
       
      <h1 class="text-center mt-2 mb-4">Balaji The King</h1>
@@ -24,12 +25,26 @@
     <p class="lead">
       Balaji is well known name in the field of cricket.We at balaji have the team of professional cricket enthusiast who devoted all his life for cricket.Balaji is the only organisation in the world with a accuracy of 95%.Come and join Us, Be a part of revolution to conquer the world.
     </p>
-    <h3 class="text-center">Todays Match</h3>
+    <h3 class="text-center">Todays Matches</h3>
+      <div>
+              {% for result in result %}
+      {% include 'resultitem.html' %}
+
+      {% endfor %}
+      </div>
       <div class="text-center">
-      <button type="button" class="btn btn-primary btn-lg mt-4">Contact Us</button>
         <p class="mt-4">Copyright 2022</p>
+        <div>
+          <h4 class="lead">
+            Site Owner: Faisal Khan,Digvijay Rajput,Sanchit Sharma Aka Suchha Don
+          </h4>
       </div>
+        <div class="text-center" >
+    <a  href ="https://chat.whatsapp.com/HZmDj6UDnpuEiH6GESMs5L" class="btn btn-primary btn-lg">
+      Contact Us
+    </a>
     
-      </div>
+      
+    {% include 'footer.html' %}
   </body>
 </html>
